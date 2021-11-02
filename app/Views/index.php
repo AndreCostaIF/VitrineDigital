@@ -37,9 +37,11 @@
           <li class="span2">
             <div class="thumbnail">
             <!--Imagem da categoria-->
+            <div class="logoIndex">
             <a href="<?=site_url("Lojas/index/{$item['IdcategoriaNegocio']}")?>">
                 <img alt="300x200" src='<?=base_url($item["imagem"])?>'>
             </a>
+            </div>
             <!--Nome da categoria-->
             <div class="caption">
             <a href="<?=site_url("Lojas/index/{$item['IdcategoriaNegocio']}")?>">

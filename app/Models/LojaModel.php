@@ -26,11 +26,13 @@
             $this->select("NomeFantasia");
             $this->select("Logo");
             $this->select("IdLoja");
+            $this->select("IdEndereco");
+            $this->select("Telefone");
             $this->where("IdCategoriaNegocio", $Id);
             return $this->doFindAll();
             
         }
-
+        
         public function findAllStore(){
             $this->select("NomeFantasia");
             $this->select("Logo");

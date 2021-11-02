@@ -157,7 +157,11 @@
     text-align: center;
   }
 
-  .thumbnail a img{
+  .thumbnail img{
+    width: 100%;
+  }
+
+  .thumbnail .logoIndex a img{
     max-width: 100px;
     max-height: 100px;
   

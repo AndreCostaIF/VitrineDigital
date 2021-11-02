@@ -10,8 +10,18 @@ class Lojas extends BaseController{
         $res['categoria'] = $categorias->findAll();
         
         $loja = new \App\Models\LojaModel();
+        $lojaAddress = new \App\Models\AddressUserModel();
        
         $shop['lojas'] = $loja->findAllById($id);
+        $cont=0;
+        foreach($shop['lojas'] as $key){
+           
+           array_push($shop['lojas'][$cont],
+                        $lojaAddress->findAddresById($key["IdEndereco"]));
+            $cont++;
+        }//echo "<pre>";var_dump($shop['lojas'][0][0]["Rua"]);
+        
+        
         $shop['categoria'] = $categorias->findAll();
         return view('lojas',  $shop);
         

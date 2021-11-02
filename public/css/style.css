@@ -12,7 +12,9 @@
   /*border: 1px solid red;*/
   margin: 0;
   padding: 0;
-  
+}
+hr{
+  border: 1px solid black;
 }
 body {
   background: #F4F4F4;
@@ -156,10 +158,14 @@ p, h4, th, .image, .basic-text{
 
 
 .thumbnail {
+  
  border: 0px;
   text-align: center;
 }
 
+.thumbnail img{
+  width: 100%;
+}
 .thumbnail .caption{
   
   display: block;
@@ -169,7 +175,7 @@ p, h4, th, .image, .basic-text{
 .thumbnail .caption a{
   font-size: 1.5rem;
 }
-.thumbnail a img{
+.thumbnail .logoIndex a img{
   
   max-width: 100px;
   max-height: 100px;

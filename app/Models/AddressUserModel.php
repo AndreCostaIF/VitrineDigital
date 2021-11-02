@@ -21,6 +21,16 @@
             return $this->first();
         }
 
+        public function findAddresById($id){
+            $this->select("Rua");
+            $this->select("Numero");
+            $this->select("Bairro");
+            $this->select("Cidade");
+            $this->select("UF");
+            $this->where("IdEndereco", $id);
+            return $this->first();
+        }
+
         
         
     
